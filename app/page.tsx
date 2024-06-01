@@ -3,6 +3,7 @@ import { FloatingNav } from '../components/ui/FloatingNav';
 import Grid from "@/components/Grid";
 import { FaHome } from "react-icons/fa";
 import { FaCode, FaEnvelope, FaUser } from "react-icons/fa6";
+import RecentProject from '../components/RecentProject';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         />
         <Hero></Hero>
         <Grid></Grid>
+        <RecentProject></RecentProject>
         <div className="my-96"></div>
       </div>
     </main>
