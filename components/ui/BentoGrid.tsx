@@ -7,7 +7,7 @@ import Lottie from "react-lottie";
 import { useState } from "react";
 import animationData from '@/data/confetti.json'
 import MagicButton from './MagicButton';
-import { FaCheck, FaCopy } from "react-icons/fa6";
+import { FaCheck, FaCopy, FaUser } from "react-icons/fa6";
 
 export const BentoGrid = ({
     className,
@@ -98,11 +98,24 @@ export const BentoGridItem = ({
                 <div className={cn(titleClassName, 'group/hover/ bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10')}>
                     {
                         id === 1 && (
-                            <div className="grid grid-cols-2">
-                                <div className="mb-4 w-80 h-80 aspect-square rounded-full overflow-hidden col-span-1">
-                                    <img className="w-full h-full object-cover aspect-square col-span-1" src="/foto.jpg" alt="" />
+                            <div className="grid grid-cols-1 lg:grid-cols-2 w-full lg:w-3/4">
+                                <div className="mb-4 m-auto bg-slate-100 w-40 h-40 aspect-square rounded-full overflow-hidden col-span-1">
+                                    <img className="w-full h-full object-cover aspect-square col-span-1" src="/foto.JPG" alt="" />
                                 </div>
-                                
+                                <div className="h-full flex flex-col gap-2 justify-center mb-4 lg:mb-0">
+                                    <div className="flex gap-2">
+                                        {/* <div className=""><FaUser></FaUser></div> */}
+                                        <div className="text-xl font-medium">Ryo Khrisna Fitriawan</div>
+                                    </div>
+                                    <div className="flex gap-2">
+                                        {/* <div className=""><FaUser></FaUser></div> */}
+                                        <div className="text-sm text-slate-500">Semarang, Indonesia</div>
+                                    </div>
+                                    <div className="flex gap-2">
+                                        {/* <div className=""><FaUser></FaUser></div> */}
+                                        <div className="text-sm text-slate-500">Universitas Dian Nuswantoro</div>
+                                    </div>
+                                </div>
                             </div>
                         )
                     }

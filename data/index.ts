@@ -18,7 +18,7 @@ export const gridItems = [
         In my time as a web developer, I’ve worked with my friend to win a competition or build software for a company. If you want to call me, shoot me a message here on LinkedIn, or email me at ryokhrisnaf@gmail.com.`,
         className: "lg:col-span-3 md:col-span-6 row-span-2 lg:min-h-[60vh]",
         imgClassName: "w-full h-full",
-        titleClassName: "justify-end text-base",
+        titleClassName: "",
         img: "",
         spareImg: "",
     },
@@ -52,7 +52,17 @@ export const gridItems = [
     //     img: "/grid.svg",
     //     spareImg: "/b4.svg",
     // },
-
+   
+    {
+        id: 5,
+        title: "Currently building an app with blockchain technology",
+        description: "The Inside Scoop",
+        className: "md:col-span-3 md:row-span-1 md:order-last",
+        imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+        titleClassName: "justify-center md:justify-start lg:justify-center",
+        img: "/b5.svg",
+        spareImg: "/grid.svg",
+    },
     {
         id: 6,
         title: "Do you want to start a project together?",
@@ -62,16 +72,6 @@ export const gridItems = [
         titleClassName: "justify-center md:max-w-full max-w-60 text-center",
         img: "",
         spareImg: "",
-    },
-    {
-        id: 5,
-        title: "Currently building an app with blockchain technology",
-        description: "The Inside Scoop",
-        className: "md:col-span-3 md:row-span-1",
-        imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-        titleClassName: "justify-center md:justify-start lg:justify-center",
-        img: "/b5.svg",
-        spareImg: "/grid.svg",
     },
 ];
 
