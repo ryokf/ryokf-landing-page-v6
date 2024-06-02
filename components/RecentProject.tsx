@@ -4,11 +4,11 @@ import { PinContainer } from './ui/3d-pin';
 
 const RecentProject = () => {
     return (
-        <div className='py-20'>
+        <div className='py-40'>
             <h1 className='heading'>
                 A small selection of {''} Recent Project
             </h1>
-            <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-0 md:gap-y-8 mt-10">
+            <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-0 md:gap-y-8">
                 {
                     projects.map((project) => (
                         <div key={project.id} className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]">

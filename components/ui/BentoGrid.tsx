@@ -8,6 +8,7 @@ import { useState } from "react";
 import animationData from '@/data/confetti.json'
 import MagicButton from './MagicButton';
 import { FaCheck, FaCopy, FaUser } from "react-icons/fa6";
+import { BackgroundGradient } from './background-gradient';
 
 export const BentoGrid = ({
     className,
@@ -100,7 +101,9 @@ export const BentoGridItem = ({
                         id === 1 && (
                             <div className="grid grid-cols-1 lg:grid-cols-2 w-full lg:w-3/4">
                                 <div className="mb-4 m-auto bg-slate-100 w-40 h-40 aspect-square rounded-full overflow-hidden col-span-1">
-                                    <img className="w-full h-full object-cover aspect-square col-span-1" src="/foto.JPG" alt="" />
+                                    <BackgroundGradient className="p-[0.1px]"> 
+                                        <img className="w-full h-full object-cover rounded-full aspect-square col-span-1" src="/foto.JPG" alt="" />
+                                    </BackgroundGradient>
                                 </div>
                                 <div className="h-full flex flex-col gap-2 justify-center mb-4 lg:mb-0">
                                     <div className="flex gap-2">
